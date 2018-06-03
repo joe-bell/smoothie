@@ -1,0 +1,11 @@
+{
+  "extends": [
+    "@smoothie-css/stylelint-config/index.js",
+    "@smoothie-css/stylelint-scss-config/index.js"
+  ],
+  "ignoreFiles": [ "**/*.js" ],
+  "rules": {
+    "function-name-case": null,
+    "value-keyword-case": null
+  }
+}

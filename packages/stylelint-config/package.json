@@ -1,0 +1,27 @@
+{
+  "name": "@smoothie-css/stylelint-config",
+  "version": "0.0.1",
+  "description": "Smoothie's recommended Stylelint configuration",
+  "main": "index.js",
+  "author": "Joe Bell <joe@joebell.co.uk>",
+  "license": "Apache License 2.0",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joebell93/smoothie.git"
+  },
+  "keywords": [
+    "stylelint",
+    "lint",
+    "css"
+  ],
+  "bugs": {
+    "url": "https://github.com/joebell93/smoothie/issues"
+  },
+  "homepage": "https://github.com/joebell93/smoothie#readme",
+  "peerDependencies": {
+    "stylelint": "^9.3.0"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "plugins": [
+    [ "module-resolver", 
+      { 
+        "root": ["."], 
+        "alias": { 
+          "styles": "./styles"
+        },
+        "cwd": "babelrc"
+      }
+    ],
+    [ "styled-components", { "ssr": true, "displayName": true, "preprocess": false } ],
+    [ "wrap-in-js", { "extensions": [ "css$", "scss$" ] } ]
+  ],
+  "presets": [ "next/babel" ],
+  "ignore": []
+}

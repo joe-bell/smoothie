@@ -1,0 +1,16 @@
+/* ==========================================================================
+   ELEMENTS / #LINKS
+   ========================================================================== */
+
+/**
+ * Our basic `<a>` elements only need very minimal styling.
+ */
+a {
+  color: map-get($colors, text);
+  text-decoration: underline;
+  cursor: pointer;
+
+  @include hocus() {
+    text-decoration: underline double;
+  }
+}

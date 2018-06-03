@@ -1,0 +1,41 @@
+// =============================================================================
+// TOOLS / #MAPS
+// =============================================================================
+
+// map-get-deep()
+// ------------------------------------
+
+/* stylelint-disable scss/no-duplicate-dollar-variables */
+
+// Access nested map values.
+// @author Hugo Giraudel (with modifications)
+@function map-get-deep($map, $keys...) {
+  @if map-has-keys-deep($map, $keys...) {
+    @each $key in $keys {
+      $map: map-get($map, $key);
+    }
+
+    @return $map;
+  }
+
+  @warn "Unknown keys of `#{$keys}` in the defined map";
+  @return null;
+}
+
+// map-has-keys-deep()
+// ------------------------------------
+
+// Check for keys in nested maps.
+// @author Hugo Giraudel
+@function map-has-keys-deep($map, $keys...) {
+  @each $key in $keys {
+    @if not map-has-key($map, $key) {
+      @return false;
+    }
+    $map: map-get($map, $key);
+  }
+
+  @return true;
+}
+
+/* stylelint-enable */
