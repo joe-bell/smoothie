@@ -1,0 +1,10 @@
+{
+  "extends": [
+    "@smoothie-css/stylelint-config",
+    "@smoothie-css/stylelint-scss-config"
+  ],
+  "ignoreFiles": ["**/*.js"],
+  "rules": {
+    "value-keyword-case": null
+  }
+}

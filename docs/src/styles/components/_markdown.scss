@@ -1,0 +1,82 @@
+/* ==========================================================================
+   Components / Markdown
+   ========================================================================== */
+
+// Settings
+$text-spacing: 0.2em;
+$text-spacing-large: $text-spacing * 2;
+$border-width: 2px;
+
+/* stylelint-disable no-descending-specificity */
+
+/**
+ * Super nasty/hacky styles for the embedded Markdown
+ */
+.c-md {
+  margin-bottom: spacing(default);
+
+  blockquote {
+    padding: $text-spacing spacing(small);
+    border-left: $border-width solid rgba(color(gradient-end), 0.75);
+    background-color: rgba(color(gradient-start), 0.15);
+
+    /* Nested Markdown weirdness. */
+    p {
+      margin-bottom: 0;
+    }
+  }
+
+  /* 1. Pinched from GitHub because it's nice */
+  code {
+    padding: $text-spacing $text-spacing-large; /* [1] */
+    margin: 0;
+    font-size: 85%; /* [1] */
+    border: 1px solid rgba(color(text), 0.05);
+    background-color: rgba(color(text), 0.025);
+    border-radius: 3px; /* [1] */
+    vertical-align: text-bottom;
+  }
+
+  /**
+   * Apply styling to Summary when Details *isn't* open
+   * and only to the Details when it *is* open
+   */
+  details:not([open]) summary,
+  details[open] {
+    padding: spacing(small);
+    border: $border-width solid color(text);
+
+    &:hover, &:focus {
+      cursor: pointer;
+      border-color: color(gradient-start);
+    }
+
+    summary {
+      margin-bottom: spacing(default);
+    }
+  }
+
+  /* Apply the gradient to horizontal rules */
+  hr {
+    height: $border-width;
+    border: none;
+    margin: (spacing(large) - ($border-width / 2)) 0; /* [1] */
+    background: color(gradient-end);
+    background: linear-gradient(to left, color(gradient-start), color(gradient-end), color(gradient-start));
+  }
+
+  /* Breakout from the main container */
+  .c-hr--large {
+    position: relative; /* [1] */
+    width: 100vw; /* [1] */
+    left: 50%; /* [1] */
+    margin-left: -50vw;/* [1] */
+    background: none;
+    border-bottom: $border-width solid color(text);
+  }
+
+  /* Use Roman Numerals for second-level ordered lists. */
+  li > ol {
+    list-style-type: lower-roman;
+  }
+}

@@ -1,0 +1,44 @@
+/* ==========================================================================
+   DOCS (RECIPE: SCSS)
+   ========================================================================== */
+
+// Packages:
+// 1. Shared SCSS Assets
+//    To avoid repetition between SCSS recipe examples, some common files are
+//    stored in `recipes/assets/scss`, which we can access via the package name.
+// 2. Normalize
+//    Cross-browser consistency styling.
+//    (This one's naughty because Sass technically doesn't allow CSS imports)
+
+// Tokens
+// ==============================================
+
+@import "tokens/colors";
+@import "tokens/spacing";
+@import "tokens/typography";
+
+// Global
+// ==============================================
+
+// Tools
+@import "~@smoothie-css/assets/scss/tools/maps"; // [1]
+@import "global/tools/shortcuts";
+
+// Generic
+@import "~@smoothie-css/assets/scss/generic/box-sizing"; // [1]
+@import "~normalize.css/normalize"; // [2]
+@import "~@smoothie-css/assets/scss/generic/reset"; // [1]
+@import "global/generic/rhythm";
+
+// Elements
+@import "global/elements/page";
+@import "global/elements/links";
+
+// Objects
+@import "global/objects/container";
+
+// Components
+// ==============================================
+
+@import "components/header";
+@import "components/markdown";

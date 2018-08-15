@@ -1,0 +1,26 @@
+/* ==========================================================================
+   Global / Elements / Page
+   ========================================================================== */
+
+// Settings
+$page-font-size: map-get($typography, font-size);
+$page-line-height: map-get($typography, line-height);
+
+/**
+ * 1. Prevent certain mobile browsers from automatically zooming fonts.
+ * 2. Fonts on OSX will look more consistent with other systems that do not
+ *    render text using sub-pixel anti-aliasing.
+ */
+html {
+  background-color: map-get($colors, background);
+  font-size: ($page-font-size / 16px) * 1em;
+  line-height: $page-line-height / $page-font-size;
+  font-family: map-get($typography, font-family);
+  color: map-get($colors, text);
+  overflow-y: scroll; /* [2] */
+  min-height: 100%; /* [3] */
+  -webkit-text-size-adjust: 100%; /* [4] */
+  -ms-text-size-adjust: 100%; /* [4] */
+  -moz-osx-font-smoothing: grayscale; /* [5] */
+  -webkit-font-smoothing: antialiased; /* [5] */
+}

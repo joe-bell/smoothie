@@ -1,0 +1,56 @@
+/* ==========================================================================
+   RECIPE: JSON-SCSS-AND-STYLED-COMPONENTS
+   ========================================================================== */
+
+// Packages:
+// 1. Shared SCSS Assets
+//    To avoid repetition between SCSS recipe examples, some common files are
+//    stored in `recipes/assets/scss`, which we can access via the package name.
+// 2. Sass MQ
+//    A neat little library for Sass-powered media queries.
+// 3. Supercell
+//    Sky UK's / CSSWizardry's layout/grid-like system.
+// 4. Normalize
+//    Cross-browser consistency styling.
+//    (This one's naughty because Sass technically doesn't allow CSS imports)
+
+// Tokens
+// ==============================================
+
+// All top-level keys in this JSON file are converted into Sass Maps via
+// node-sass-json-importer.
+// e.g. values from `"colors": { }` are available in `$colors`.
+@import "tokens.json";
+
+// Global
+// ==============================================
+
+// Config (Third-Party)
+@import "global/config/sass-mq";
+@import "global/config/supercell";
+
+// Tools
+@import "~@smoothie-css/assets/scss/tools/maps"; // [1]
+@import "~sass-mq/mq"; // [3]
+@import "~supercell/tools.widths"; // [3]
+
+// Generic
+@import "~@smoothie-css/assets/scss/generic/box-sizing"; // [1]
+@import "~normalize.css/normalize"; // [4]
+@import "~@smoothie-css/assets/scss/generic/reset"; // [1]
+@import "global/generic/rhythm";
+
+// Elements
+@import "global/elements/page";
+@import "global/elements/typography";
+@import "global/elements/links";
+@import "~@smoothie-css/assets/scss/elements/images";
+
+// Objects
+@import "global/objects/container";
+@import "~supercell/objects.layout";
+
+// Utilities
+@import "global/utilities/spacing";
+@import "global/utilities/typography";
+@import "global/utilities/widths";

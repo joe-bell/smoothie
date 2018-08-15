@@ -1,22 +1,5 @@
 # Contributing
 
-## Installation
-
-1. Clone the repo
-    ```bash
-    git clone git@github.com:joebell93/smoothie.git
-    ```
-2. Install monorepo pre-requisites
-    ```bash
-    npm i -g lerna
-    ```
-3. Install all package dependencies and link any cross-dependencies
-    ```
-    lerna bootstrap
-    ```
-
----
-
 ## Code of Conduct
 
 ### Our Pledge

@@ -1,5 +1,5 @@
 node_modules/
-out/
+recipes/*/dist/
 .DS_Store
-.next/
 package-lock.json
+*.log

@@ -1,9 +1,0 @@
-// =============================================================================
-// CONFIG / #SUPERCELL
-// =============================================================================
-
-// Our Grid System is an external dependency called Supercell
-// (github.com/sky-uk/supercell).
-// Supercell has a configurable gutter size, and by default we want it to equal
-// our Global Spacing Unit.
-$supercell-spacing-unit: map-get($spacing, default) !default;

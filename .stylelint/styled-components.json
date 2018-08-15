@@ -1,0 +1,11 @@
+{
+  "processors": ["stylelint-processor-styled-components"],
+  "extends": [
+    "@smoothie-css/stylelint-config",
+    "@smoothie-css/stylelint-scss-config"
+  ],
+  "rules": {
+    "string-quotes": "single",
+    "value-keyword-case": null
+  }
+}

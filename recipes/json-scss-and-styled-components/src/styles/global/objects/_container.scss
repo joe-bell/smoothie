@@ -1,0 +1,11 @@
+/* ==========================================================================
+   Global / Objects / Container
+   ========================================================================== */
+
+.o-container {
+  max-width: map-get($container, default);
+  padding-right: map-get($spacing, default);
+  padding-left: map-get($spacing, default);
+  margin-right: auto;
+  margin-left: auto;
+}

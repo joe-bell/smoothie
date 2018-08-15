@@ -1,0 +1,20 @@
+// =============================================================================
+// Tools / Shortcuts
+// =============================================================================
+
+// Usage:
+//   .foo {
+//     margin-top: spacing(default);
+//   }
+
+@function spacing($key) {
+  @return map-get($spacing, $key);
+}
+
+@function color($key) {
+  @return map-get($colors, $key);
+}
+
+@function typography($map, $keys...) {
+  @return map-get-deep($typography, $map, $keys...);
+}

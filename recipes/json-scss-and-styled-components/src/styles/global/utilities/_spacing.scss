@@ -1,0 +1,33 @@
+/* ==========================================================================
+   Global / Utilities / Spacing
+   ========================================================================== */
+
+/* stylelint-disable declaration-no-important */
+
+/**
+ * For the sake of this demo, I've only included the spacing utilities I need.
+ *
+ * A more advanced use-case would be sky-toolkit-core's spacing utilities:
+ * github.com/sky-uk/toolkit/blob/develop/packages/sky-toolkit-core/utilities/_spacing.scss
+ */
+.u-margin-top {
+  margin-top: map-get($spacing, default) !important;
+}
+
+.u-margin-top-large {
+  margin-top: map-get($spacing, large) !important;
+}
+
+.u-margin-bottom {
+  margin-bottom: map-get($spacing, default) !important;
+}
+
+.u-margin-bottom-none {
+  margin-bottom: 0 !important;
+}
+
+.u-margin-bottom-large {
+  margin-bottom: map-get($spacing, large) !important;
+}
+
+/* stylelint-enable */

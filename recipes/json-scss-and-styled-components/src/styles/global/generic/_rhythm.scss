@@ -1,0 +1,26 @@
+/* ==========================================================================
+   Global / Generic / Rhythm
+   ========================================================================== */
+
+/**
+ * Apply default spacing to the bottom of all block-level elements for
+ * consistent vertical rhythm.
+ */
+h1, h2, h3, h4, h5, h6, hgroup,
+ul, ol, dl,
+blockquote, p, address,
+table,
+fieldset, figure,
+pre {
+  margin-bottom: map-get($spacing, default);
+}
+
+/**
+ * Indent all lists by default.
+ *
+ * Arbitrary 2px added due to bullet-size.
+ */
+ul,  ol,
+dd {
+  margin-left: map-get($spacing, default);
+}

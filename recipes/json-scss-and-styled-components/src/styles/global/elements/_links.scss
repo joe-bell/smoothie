@@ -1,0 +1,17 @@
+/* ==========================================================================
+   Global / Elements / Links
+   ========================================================================== */
+
+/**
+ * Our basic `<a>` elements.
+ */
+a {
+  color: map-get($colors, link);
+  text-decoration: none;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+  }
+}

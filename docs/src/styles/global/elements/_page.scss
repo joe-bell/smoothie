@@ -1,0 +1,22 @@
+/* ==========================================================================
+   Global / Elements / Page
+   ========================================================================== */
+
+/**
+ * 1. Prevent certain mobile browsers from automatically zooming fonts.
+ * 2. Fonts on OSX will look more consistent with other systems that do not
+ *    render text using sub-pixel anti-aliasing.
+ */
+html {
+  background-color: color(background);
+  font-size: (typography(base, font-size) / 16px) * 1em;
+  line-height: typography(base, line-height) / typography(base, font-size);
+  font-family: typography(font-family);
+  color: color(text);
+  overflow-y: scroll;
+  min-height: 100%;
+  -webkit-text-size-adjust: 100%; /* [1] */
+  -ms-text-size-adjust: 100%; /* [1] */
+  -moz-osx-font-smoothing: grayscale; /* [2] */
+  -webkit-font-smoothing: antialiased; /* [2] */
+}

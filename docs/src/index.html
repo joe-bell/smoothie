@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+  <head>
+    <title><%= htmlWebpackPlugin.options.title %></title>
+    <%= require('html-loader!../../recipes/assets/partials/meta.html') %>
+  </head>
+  <body class="c-page">
+    <div class="o-container c-md">
+      <header class="c-header">
+        <ul class="c-header__list">
+          <li class="c-header__item">
+            <a class="c-header__profile" href="https://twitter.com/joebell_">Joe Bell</a>
+          </li>
+          <li class="c-header__item c-header__github">
+              <a class="github-button" href="https://github.com/joebell93/smoothie" aria-label="View joebell93/smoothie on GitHub">View on GitHub</a>
+          </li>
+        </ul>
+      </header>
+      <%= require('html-loader!markdown-loader!../../README.md') %>
+    </div>
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+  </body>
+</html>

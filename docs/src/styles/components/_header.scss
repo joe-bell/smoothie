@@ -1,0 +1,26 @@
+/* ==========================================================================
+   Components / Header
+   ========================================================================== */
+
+.c-header {
+  position: relative;
+  margin-bottom: spacing(large);
+}
+
+.c-header__list {
+  margin-left: 0;
+  list-style-type: none;
+}
+
+.c-header__item {
+  top: 0;
+}
+
+.c-header__profile {
+  font-weight: bold;
+}
+
+.c-header__github {
+  position: absolute;
+  right: 0;
+}

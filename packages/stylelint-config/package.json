@@ -1,6 +1,6 @@
 {
   "name": "@smoothie-css/stylelint-config",
-  "version": "0.0.1",
+  "version": "0.3.0",
   "description": "Smoothie's recommended Stylelint configuration",
   "main": "index.js",
   "author": "Joe Bell <joe@joebell.co.uk>",

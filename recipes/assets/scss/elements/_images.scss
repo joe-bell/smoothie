@@ -1,0 +1,23 @@
+/* ==========================================================================
+   Elements / Images
+   ========================================================================== */
+
+/**
+ * 1. Responsive images.
+ * 2. Distinguish `alt` text from copy text.
+ * 3. Removes whitespace below
+ */
+img {
+  max-width: 100%; /* [1] */
+  font-style: italic; /* [2] */
+  vertical-align: middle; /* [3] */
+}
+
+/**
+ * 1. If a `width` and/or `height` attribute has been explicitly defined, remove
+ *    the max-width.
+ */
+img[width], /* [1] */
+img[height] {  /* [1] */
+  max-width: none;
+}

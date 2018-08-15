@@ -1,0 +1,8 @@
+// =============================================================================
+// Global / Config / Supercell
+// =============================================================================
+
+// Supercell has a configurable gutter size, and by default we want it to equal
+// our default spacing unit.
+// See `github.com/sky-uk/supercell` for more info
+$supercell-spacing-unit: map-get($spacing, default) !default;
