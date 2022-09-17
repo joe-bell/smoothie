@@ -3,7 +3,7 @@
   "version": "0.3.0",
   "description": "Smoothie's recommended stylelint-scss configuration",
   "main": "index.js",
-  "author": "Joe Bell <joe@joebell.co.uk>",
+  "author": "Joe Bell (https://joebell.co.uk)",
   "license": "Apache License 2.0",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

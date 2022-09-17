@@ -2,7 +2,7 @@
   "private": true,
   "name": "@smoothie-css/docs",
   "version": "0.3.0",
-  "author": "Joe Bell <joe@joebell.co.uk>",
+  "author": "Joe Bell (https://joebell.co.uk)",
   "license": "Apache License 2.0",
   "main": "src/index.js",
   "scripts": {
